@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>-</title>
+    <link rel="stylesheet" type="text/css" href="file style.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love confession</title>
+    <link rel="stylesheet" type="text/css" href="file style.css">
+</head>
+<body>
+    <h1>-</h1>
+  
+  <audio autoplay>
+    <source src="justin.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+    <div class="container">
+        <h1>Click the button to see my feelings for you</h1>
+        <button id="revealButton">Reveal</button>
+        <div id="heartContainer" class="hidden">
+            <div class="heart"></div>
+            <p>I love you!</p>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('revealButton').addEventListener('click', function() {
+        document.getElementById('heartContainer').classList.remove('hidden');
+    });
+</script>
+</html>
